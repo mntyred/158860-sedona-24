@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Адлан Ибрагимов](https://up.htmlacademy.ru/adaptive/24/user/158860).
-* Наставник: `Олег Цыганов`.
+* Наставник: [Олег Цыганов](https://htmlacademy.ru/profile/olegtsyganov).
 
 ---
 
