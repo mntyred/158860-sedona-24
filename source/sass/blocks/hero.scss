@@ -1,0 +1,22 @@
+.hero__image {
+  width: 100%;
+}
+.hero__text-wrapper {
+  margin: 32px 18px 27px;
+  padding: 0 14px;
+  text-align: center;
+}
+.hero__title {
+font-size: 18px;
+line-height: 26px;
+text-transform: uppercase;
+color: $black;
+font-weight: 700;
+margin: 0;
+margin-bottom: 28px;
+}
+.hero__subtitle {
+  margin: 0;
+  font-size: 14px;
+  line-height: 26px;
+}
