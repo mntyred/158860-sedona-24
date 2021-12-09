@@ -3,23 +3,27 @@
   text-align: center;
   text-transform: uppercase;
   background-color: $light-grey;
+
   &--prime-color {
     background-color: $light-blue;
     color: $white;
     padding: 35px 20px;
   }
 }
+
 .advantage__title {
   margin: 0;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
 }
+
 .advantage__number {
   margin: 11px 0 17px;
   font-size: 14px;
   line-height: 21px;
 }
+
 .advantage__description {
   margin: 0;
   font-size: 14px;

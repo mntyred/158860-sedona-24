@@ -1,0 +1,52 @@
+.cards-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cards-list__item {
+  padding: 22px 0 21px;
+}
+
+.cards-list__photo {
+  img {
+    width: 100%;
+  }
+}
+
+.cards-list__title {
+  margin: 11px 0 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cards-list__author {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.cards-list__likes {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.cards-list__like-icon {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-list__counter {
+  margin-left: 14px;
+}
