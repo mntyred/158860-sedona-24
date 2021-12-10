@@ -14,7 +14,7 @@
   width: 100%;
 }
 
-.site-list--ctive {
+.site-list--active {
   .site-list__item {
     display: flex;
 
@@ -30,10 +30,10 @@
   min-height: 55px;
   text-align: center;
   align-items: center;
-  display: none;
+  display: flex; //здесь по умолчанию будет none
 
   &--logo {
-    display: block;
+    display: none; //Здесь по умолчанию будет block
     background-color: transparent;
   }
 }

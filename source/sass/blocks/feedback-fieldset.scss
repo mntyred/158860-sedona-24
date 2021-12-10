@@ -4,7 +4,7 @@
   padding: 20px 0 28px;
 }
 
-.feedback-fieldset__legend {
+.feedback-fieldset__title {
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
@@ -12,7 +12,9 @@
   text-align: center;
   padding: 0;
   display: block;
-  margin-top: 20px;
+  margin: 0;
+  margin-bottom: 20px;
+  // margin-top: 20px;
 }
 
 .feedback-fieldset__input-list {
