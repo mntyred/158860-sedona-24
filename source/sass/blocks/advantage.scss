@@ -9,6 +9,10 @@
     color: $white;
     padding: 35px 20px;
   }
+
+  @media (min-width: $tablet-width) {
+    max-width: 256px;
+  }
 }
 
 .advantage__title {

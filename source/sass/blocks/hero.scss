@@ -4,8 +4,13 @@
 
 .hero__text-wrapper {
   margin: 32px 20px 16px;
-  padding: 0 14px;
+  padding: 0 12px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 32px auto 16px;
+    max-width: 520px;
+  }
 }
 
 .hero__title {

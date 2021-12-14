@@ -1,48 +1,126 @@
+// .site-list {
+//   display: flex;
+//   flex-direction: column;
+//   position: relative;
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+//   align-items: center;
+//   font-size: 18px;
+//   line-height: 40px;
+//   font-weight: 700;
+//   text-transform: uppercase;
+//   color: $white;
+//   width: 100%;
+
+//   @media (min-width: $tablet-width) {
+//     flex-direction: row;
+//   }
+// }
+
+// .site-list--active {
+//   .site-list__item {
+//     display: flex;
+
+//     &--logo {
+//       display: none;
+//     }
+//   }
+// }
+
+// .site-list__item {
+//   background-color: $light-blue;
+//   width: 100%;
+//   min-height: 56px;
+//   text-align: center;
+//   align-items: center;
+//   display: none;//здесь по умолчанию будет none
+
+//   @media (min-width: $tablet-width) {
+//     display: flex;
+//     background-color: transparent;
+//     color: $black;
+//     margin: 0;
+//     padding: 0;
+//   }
+
+//   &--logo {
+//     display: block; //Здесь по умолчанию будет block
+//     background-color: transparent;
+//   }
+// }
+
+// .site-list__link {
+//   text-decoration: none;
+//   color: inherit;
+//   cursor: pointer;
+//   width: 100%;
+//   height: 100%;
+//   display: inline-block;
+// }
 .site-list {
   display: flex;
-  flex-direction: column;
-  position: relative;
+  width: 100%;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
-  align-items: center;
-  font-size: 18px;
-  line-height: 40px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $white;
-  width: 100%;
-}
+  flex-direction: column;
 
-.site-list--active {
-  .site-list__item {
-    display: flex;
-
-    &--logo {
-      display: none;
-    }
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    max-height: 100%;
+    align-items: flex-start;
   }
 }
 
 .site-list__item {
-  background-color: $light-blue;
   width: 100%;
-  min-height: 55px;
-  text-align: center;
-  align-items: center;
-  display: flex; //здесь по умолчанию будет none
-
-  &--logo {
-    display: none; //Здесь по умолчанию будет block
-    background-color: transparent;
-  }
 }
 
 .site-list__link {
   text-decoration: none;
-  color: inherit;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  color: $white;
+  background-color: $light-blue;
+  padding: 10px 0 5px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
   cursor: pointer;
-  width: 100%;
-  height: 100%;
-  display: inline-block;
+
+  &--logo {
+    display: block;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    color: $black;
+    padding: 0;
+  }
+}
+
+.site-list--active {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  .site-list__link {
+    display: flex;
+
+    &--logo {
+      display: none;
+      @media (min-width: $tablet-width) {
+        display: block;
+      }
+    }
+  }
 }

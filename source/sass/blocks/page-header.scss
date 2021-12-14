@@ -1,5 +1,9 @@
+// .page-header {
+//   position: relative;
+//   min-height: 56px;
+// }
 .page-header {
-  position: relative;
+  background-color: $white;
   min-height: 56px;
 }
 
@@ -13,4 +17,8 @@
   top: 17px;
   right: 20px;
   background-color: $black;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
