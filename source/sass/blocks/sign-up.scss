@@ -17,3 +17,10 @@
   font-size: 14px;
   line-height: 21px;
 }
+
+.sign-up__wrapper {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    max-width: 458px;
+  }
+}

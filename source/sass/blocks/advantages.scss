@@ -24,3 +24,12 @@
     max-height: 256px;
   }
 }
+
+.advantages__secondary-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    background-color: $light-grey;
+  }
+}

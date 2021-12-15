@@ -1,5 +1,9 @@
 .advantage {
   padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   text-transform: uppercase;
   background-color: $light-grey;
@@ -11,7 +15,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    max-width: 256px;
+    min-width: 256px;
+    min-height: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 400px;
   }
 }
 
@@ -32,4 +41,8 @@
   margin: 0;
   font-size: 14px;
   line-height: 21px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 192px;
+  }
 }
