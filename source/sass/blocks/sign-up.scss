@@ -1,5 +1,5 @@
 .sign-up {
-  padding: 33px 20px 49px;
+  padding: 0 20px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -19,8 +19,15 @@
 }
 
 .sign-up__wrapper {
+  margin: 33px 0 49px;
+
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
+    margin: 58px auto;
+    max-width: 458px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 58px auto 66px;
     max-width: 458px;
   }
 }
