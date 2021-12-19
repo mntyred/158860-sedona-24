@@ -1,10 +1,35 @@
-.advantages__picture {
-  img {
-    width: 100%;
+.advantages__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: $light-grey;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.advantages__item {
+  &--wide {
+    grid-column: 1 / -1;
+  }
+}
+
+.advantages__image {
+  width: 100%;
+  display: block;
 }
 
 .advantages__sub-list {
   margin: 0;
   padding: 35px 20px;
+  background-color: $white;
+}
+
+.advantages__inner-wrapper {
+  @media (min-width: $tablet-width) {
+    max-height: 256px;
+    display: flex;
+  }
 }

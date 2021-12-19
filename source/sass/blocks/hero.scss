@@ -1,11 +1,24 @@
 .hero__image {
+  display: block;
   width: 100%;
 }
 
 .hero__text-wrapper {
-  margin: 32px 20px 16px;
-  padding: 0 14px;
+  margin: 32px auto 27px;
+  padding: 0 25px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 43.5px auto 52.5px;
+    max-width: 520px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 55px auto 41px;
+    max-width: 520px;
+    padding: 0;
+  }
 }
 
 .hero__title {
@@ -14,8 +27,11 @@
   text-transform: uppercase;
   color: $black;
   font-weight: 700;
-  margin: 0;
-  margin-bottom: 28px;
+  margin: 0 0 28px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .hero__subtitle {

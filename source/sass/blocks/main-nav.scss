@@ -1,7 +1,12 @@
-.main-nav__list {
+.main-nav {
+  position: relative;
+}
+
+.main-nav__logo {
+  height: 84px;
+  left: 50%;
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0;
+  transform: translateX(-50%);
+  width: 102px;
 }
