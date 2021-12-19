@@ -9,11 +9,15 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .sign-up__description {
-  margin: 0;
-  padding: 20px 9px 27px;
+  margin: 21px 0 27px;
+  padding: 0 9px;
   font-size: 14px;
   line-height: 21px;
 }
