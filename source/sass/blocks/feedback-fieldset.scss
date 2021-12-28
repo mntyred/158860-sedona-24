@@ -135,7 +135,9 @@
   }
 
   &:last-child {
-    margin-bottom: 0;
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 0;
+    }
   }
 
   &--contacts {
@@ -144,6 +146,6 @@
   }
 
   &--checkbox {
-    margin: 0;
+    margin: 0 0 24px 0;
   }
 }

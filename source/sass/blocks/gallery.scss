@@ -1,7 +1,4 @@
-.gallery__cards-list {
-  margin-bottom: 32px;
-  padding: 0 20px;
-
+.gallery__inner {
   @media (min-width: $tablet-width) {
     padding: 0 60px;
   }
@@ -11,7 +8,24 @@
   }
 }
 
+.gallery__cards-list {
+  margin-bottom: 32px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
 .gallery__video-wrapper {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 85px;
+  }
 }
