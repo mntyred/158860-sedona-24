@@ -25,6 +25,10 @@
   margin: 0;
   padding: 35px 20px;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 31px;
+  }
 }
 
 .advantages__inner-wrapper {

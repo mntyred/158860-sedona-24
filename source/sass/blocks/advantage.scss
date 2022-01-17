@@ -1,4 +1,5 @@
 .advantage {
+  position: relative;
   padding: 0 35px;
   min-height: 169px;
   display: flex;
@@ -30,6 +31,20 @@
       }
     }
   }
+
+  &--first {
+    min-height: 228px;
+    padding-top: 37px;
+    background-position: 50% top;
+    background-image: url("../img/white-space-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 768px 36px;
+
+    @media (min-width: $tablet-width) {
+     background-image: none;
+    }
+  }
+
 
   @media (min-width: $tablet-width) {
     min-width: 256px;
