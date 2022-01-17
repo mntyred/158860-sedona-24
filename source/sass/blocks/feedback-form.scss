@@ -1,0 +1,24 @@
+.feedback-form {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas:
+      "radio name"
+      "contacts contacts"
+      "checkbox checkbox"
+      "area area";
+  }
+}
+
+.feedback-form__footnote {
+  display: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  text-align: right;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
