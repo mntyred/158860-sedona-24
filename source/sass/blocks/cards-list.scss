@@ -14,10 +14,39 @@
 }
 
 .cards-list__item {
-  padding: 22px 0 21px;
+  padding: 22px 20px 21px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+    top: 0;
+    left: 0;
+  }
+
+  &:last-child::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+    bottom: 0;
+    left: 0;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
+
+    &::before {
+      content: none;
+    }
+    
+    &::after {
+      content: none;
+    }
   }
 
   @media (min-width: $desktop-width) {

@@ -45,8 +45,8 @@
         <div class="feedback__wrapper">
           <h2 class="visually-hidden">Форма обратной связи</h2>
           <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="feedback-fieldset">
-              <h2 class="feedback-fieldset__title">Представьтесь:</h2>
+            <fieldset class="feedback-fieldset feedback-fieldset--name">
+              <legend class="feedback-fieldset__title">Представьтесь:</legend>
               <ul class="feedback-fieldset__input-list">
                 <li class="feedback-fieldset__input-item">
                   <label class="feedback-fieldset__label" for="name">Имя*:</label>
@@ -63,7 +63,7 @@
               </ul>
             </fieldset>
             <fieldset class="feedback-fieldset">
-              <h2 class="feedback-fieldset__title">Контактная информация:</h2>
+              <legend class="feedback-fieldset__title">Контактная информация:</legend>
               <ul class="feedback-fieldset__input-list feedback-fieldset__input-list--contacts">
                 <li class="feedback-fieldset__input-item feedback-fieldset__input-item--contacts">
                   <label class="feedback-fieldset__label" for="phone"><span class="feedback-fieldset__number">Контактный</span> телефон*:</label>
@@ -76,52 +76,49 @@
               </ul>
             </fieldset>
             <fieldset class="feedback-fieldset">
-              <h2 class="feedback-fieldset__title">Ваше общее впечатление:</h2>
+              <legend class="feedback-fieldset__title">Ваше общее впечатление:</legend>
               <ul class="feedback-fieldset__input-list">
                 <li class="feedback-fieldset__input-item">
-                  <input type="radio" class="visually-hidden" name="impression" value="1" id="positive" checked>
-                  <span class="feedback-fieldset__radio"></span>
-                  <label class="feedback-fieldset__label feedback-fieldset__label--second-type" for="positive">Скорее положительно</label>
+                  <input type="radio" class="visually-hidden feedback-fieldset__radio" name="impression" value="1" id="positive" checked>
+                  <label class="feedback-fieldset__label feedback-fieldset__label--second-type feedback-fieldset__label--radio" for="positive">Скорее положительно</label>
                 </li>
                 <li class="feedback-fieldset__input-item">
-                  <input type="radio" class="visually-hidden" name="impression" value="2" id="negative">
-                  <span class="feedback-fieldset__radio"></span>
-                  <label class="feedback-fieldset__label feedback-fieldset__label--second-type" for="negative">Скорее отрицательное</label>
+                  <input type="radio" class="visually-hidden feedback-fieldset__radio" name="impression" value="2" id="negative">
+                  <label class="feedback-fieldset__label feedback-fieldset__label--second-type feedback-fieldset__label--radio" for="negative">Скорее отрицательное</label>
                 </li>
                 <li class="feedback-fieldset__input-item">
-                  <input type="radio" class="visually-hidden" name="impression" value="3" id="neutral">
-                  <span class="feedback-fieldset__radio"></span>
-                  <label class="feedback-fieldset__label feedback-fieldset__label--second-type" for="neutral">Затрудняюсь ответить</label>
+                  <input type="radio" class="visually-hidden feedback-fieldset__radio" name="impression" value="3" id="neutral">
+                  <label class="feedback-fieldset__label feedback-fieldset__label--second-type feedback-fieldset__label--radio" for="neutral">Затрудняюсь ответить</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="feedback-fieldset">
-              <h2 class="feedback-fieldset__title">Посещенные достопримечательности:</h2>
+              <legend class="feedback-fieldset__title">Посещенные достопримечательности:</legend>
               <ul class="feedback-fieldset__input-list feedback-fieldset__input-list--checkboxes">
                 <li class="feedback-fieldset__input-item feedback-fieldset__input-item--checkbox">
-                  <input type="checkbox" class="visually-hidden" name="devil-bridge" id="devil-bridge" checked>
-                  <span class="feedback-fieldset__checkbox"></span>
-                  <label class="feedback-fieldset__label feedback-fieldset__label--second-type" for="devil-bridge">Мост Дьявола</label>
+                  <input type="checkbox" class="visually-hidden feedback-fieldset__checkbox" name="devil-bridge" id="devil-bridge" checked>
+                  <!-- <span class="feedback-fieldset__checkbox"></span> -->
+                  <label class="feedback-fieldset__label feedback-fieldset__label--second-type feedback-fieldset__label--checkbox" for="devil-bridge">Мост Дьявола</label>
                 </li>
                 <li class="feedback-fieldset__input-item feedback-fieldset__input-item--checkbox">
-                  <input type="checkbox" class="visually-hidden" name="bell-mountain" id="bell-mountain" checked>
-                  <span class="feedback-fieldset__checkbox"></span>
-                  <label class="feedback-fieldset__label feedback-fieldset__label--second-type" for="bell-mountain">Гора-Колокол</label>
+                  <input type="checkbox" class="visually-hidden feedback-fieldset__checkbox" name="bell-mountain" id="bell-mountain" checked>
+                  <!-- <span class="feedback-fieldset__checkbox"></span> -->
+                  <label class="feedback-fieldset__label feedback-fieldset__label--second-type feedback-fieldset__label--checkbox" for="bell-mountain">Гора-Колокол</label>
                 </li>
                 <li class="feedback-fieldset__input-item feedback-fieldset__input-item--checkbox">
-                  <input type="checkbox" class="visually-hidden" name="slide-park" id="slide-park" checked>
-                  <span class="feedback-fieldset__checkbox"></span>
-                  <label class="feedback-fieldset__label feedback-fieldset__label--second-type" for="slide-park">Слайд-парк</label>
+                  <input type="checkbox" class="visually-hidden feedback-fieldset__checkbox" name="slide-park" id="slide-park" checked>
+                  <!-- <span class="feedback-fieldset__checkbox"></span> -->
+                  <label class="feedback-fieldset__label feedback-fieldset__label--second-type feedback-fieldset__label--checkbox" for="slide-park">Слайд-парк</label>
                 </li>
                 <li class="feedback-fieldset__input-item feedback-fieldset__input-item--checkbox">
-                  <input type="checkbox" class="visually-hidden" name="red-mountains" id="red-mountains">
-                  <span class="feedback-fieldset__checkbox"></span>
-                  <label class="feedback-fieldset__label feedback-fieldset__label--second-type" for="red-mountains">Красные скалы</label>
+                  <input type="checkbox" class="visually-hidden feedback-fieldset__checkbox" name="red-mountains" id="red-mountains">
+                  <!-- <span class="feedback-fieldset__checkbox"></span> -->
+                  <label class="feedback-fieldset__label feedback-fieldset__label--second-type feedback-fieldset__label--checkbox" for="red-mountains">Красные скалы</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="feedback-fieldset">
-              <h2 class="feedback-fieldset__title">Опишите свои эмоции:</h2>
+              <legend class="feedback-fieldset__title">Опишите свои эмоции:</legend>
               <textarea class="feedback-fieldset__textarea" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
             <button class="feedback-form__button button" type="submit">Отправить отзыв</button>

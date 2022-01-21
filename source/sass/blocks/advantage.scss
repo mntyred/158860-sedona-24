@@ -30,6 +30,10 @@
         padding: 0 28px;
       }
     }
+
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
   }
 
   &--first {
